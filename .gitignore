@@ -5,6 +5,7 @@
 .cache
 dist
 coverage
+./tests/unit/coverage
 
 # Node dependencies
 node_modules
