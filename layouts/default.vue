@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<p>Hello, World</p>
+		<Header />
+		<Overlay />
 		<slot />
 	</div>
 </template>
+
+<style lang="scss"></style>

@@ -1,14 +1,7 @@
 <template>
-	<div>
-		<button @click="enableCustomLayout">Update layout</button>
-	</div>
+	<NuxtLayout>
+		<NuxtPage />
+	</NuxtLayout>
 </template>
 
-<script setup>
-function enableCustomLayout() {
-	setPageLayout("default");
-}
-definePageMeta({
-	layout: false,
-});
-</script>
+<script setup></script>

@@ -1,0 +1,23 @@
+<template>
+	<aside class="flex justify-between">
+		<div>
+			<ul>
+				<li>All</li>
+				<li>UI</li>
+				<li>UX</li>
+				<li>Enhancement</li>
+				<li>Feature</li>
+				<li>Bug</li>
+			</ul>
+		</div>
+		<div>
+			<div>
+				<p>Roadmap</p>
+				<button>View</button>
+			</div>
+			<p>Planned</p>
+			<p>In-Progress</p>
+			<p>Live</p>
+		</div>
+	</aside>
+</template>
