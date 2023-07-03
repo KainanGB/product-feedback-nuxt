@@ -1,0 +1,25 @@
+.nav-footer {
+	padding: 0.6rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: $grey-darkest;
+	color: #fff;
+
+	.feedback-btn {
+		padding: 0.6rem 1rem;
+		background-color: $purple;
+		font-weight: bold;
+	}
+}
+
+:deep(.q-item__section) {
+	border-bottom: 1px $grey-darker-15 solid;
+}
+
+:deep(.q-item) {
+	color: $grey-dark;
+	text-align: center;
+	:hover {
+		color: $purple;
+	}
+}

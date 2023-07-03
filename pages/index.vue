@@ -1,7 +1,5 @@
 <template>
-	<NuxtLayout>
-		<NuxtPage />
-	</NuxtLayout>
+	<NuxtLayout> sd </NuxtLayout>
 </template>
 
 <script setup></script>

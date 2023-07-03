@@ -20,15 +20,12 @@ export default defineNuxtConfig({
 	},
 	quasar: {
 		plugins: ["Loading", "Notify"],
+		extras: { font: null },
 	},
 	googleFonts: {
 		families: {
 			Jost: true,
-			Roboto: true,
-			"Josefin+Sans": true,
 		},
-		display: "swap",
-		prefetch: true,
 	},
 	pinia: {
 		autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],

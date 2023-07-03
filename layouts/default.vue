@@ -1,9 +1,13 @@
 <template>
 	<div>
-		<Header />
-		<Overlay />
+		<Header @toggleMenu="toggleMenu" :isMenuOpen="isMenuOpen" />
 		<slot />
 	</div>
 </template>
 
-<style lang="scss"></style>
+<script setup lang="ts">
+let isMenuOpen = ref(false);
+function toggleMenu(): void {
+	isMenuOpen.value = !isMenuOpen.value;
+}
+</script>
