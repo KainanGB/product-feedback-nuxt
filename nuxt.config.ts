@@ -20,7 +20,7 @@ export default defineNuxtConfig({
 	},
 	quasar: {
 		plugins: ["Loading", "Notify"],
-		extras: { font: null },
+		extras: { font: null, animations: "all" },
 	},
 	googleFonts: {
 		families: {

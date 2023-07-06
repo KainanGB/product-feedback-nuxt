@@ -12,6 +12,7 @@
 		</nav>
 
 		<FilterOptionsMenu />
+
 		<SideMenuOverlay v-if="isMenuOpen" @toggleMenu="emit('toggleMenu')" />
 	</div>
 </template>

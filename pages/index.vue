@@ -1,5 +1,7 @@
 <template>
-	<NuxtLayout> sd </NuxtLayout>
+	<NuxtLayout>
+		<FeedbackCard />
+	</NuxtLayout>
 </template>
 
 <script setup></script>
