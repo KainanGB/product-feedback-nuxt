@@ -1,25 +1,66 @@
-.nav-footer {
-	padding: 0.6rem 1.5rem;
+.filter-options {
+	padding: 8px 20px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: $grey-darkest;
 	color: #fff;
+	position: relative;
+
+	.filter-button {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		transition: all 0.5s;
+		&:hover {
+			color: $grey-75;
+		}
+
+		.icon {
+			margin-left: 5px;
+		}
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		top: 70px;
+		background-color: #fff;
+		color: $grey-dark;
+		border-radius: 5px;
+		box-shadow: rgba(000, 000, 000, 0.2) 5px 5px 20px;
+		padding: 0 20px;
+
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 200px;
+			min-height: 45px;
+			padding: 0 20px;
+			cursor: pointer;
+
+			transition: all 0.5s;
+			&:hover {
+				color: $purple;
+			}
+
+			&:not(:last-child) {
+				border-bottom: 1px solid $grey-hover;
+			}
+
+			.check-icon {
+				color: $purple;
+			}
+
+			margin: 0 -20px;
+		}
+	}
 
 	.feedback-btn {
-		padding: 0.6rem 1rem;
+		padding: 12px 30px;
+		color: #fff;
 		background-color: $purple;
-		font-weight: bold;
-	}
-}
-
-:deep(.q-item__section) {
-	border-bottom: 1px $grey-darker-15 solid;
-}
-
-:deep(.q-item) {
-	color: $grey-dark;
-	text-align: center;
-	:hover {
-		color: $purple;
+		font-weight: 600;
+		border-radius: 10px;
 	}
 }
