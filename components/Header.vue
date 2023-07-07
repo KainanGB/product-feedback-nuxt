@@ -5,26 +5,23 @@
 				<h2 class="text-#fff text-weight-bold">Frontend Mentor</h2>
 				<p class="q-ma-none">Feedback Board</p>
 			</div>
-			<button @click="() => emit('toggleMenu')">
-				<CloseIcon v-if="isMenuOpen" />
-				<HamburgerIcon v-if="!isMenuOpen" />
+			<button @click="toggleMenu">
+				<Icon name="ci:hamburger-md" size="35" color="white" v-if="!isMenuOpen" />
+				<Icon name="material-symbols:close" size="35" color="white" v-if="isMenuOpen" />
 			</button>
 		</nav>
 
 		<FilterOptionsMenu />
 
-		<SideMenuOverlay v-if="isMenuOpen" @toggleMenu="emit('toggleMenu')" />
+		<SideMenuOverlay v-if="isMenuOpen" @toggleMenu="toggleMenu" />
 	</div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-	isMenuOpen: {
-		type: Boolean,
-	},
-});
-
-const emit = defineEmits(["toggleMenu"]);
+let isMenuOpen = ref<boolean>(false);
+function toggleMenu(): void {
+	isMenuOpen.value = !isMenuOpen.value;
+}
 </script>
 
 <style lang="scss" scoped>
