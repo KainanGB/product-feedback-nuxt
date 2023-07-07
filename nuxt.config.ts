@@ -4,10 +4,12 @@ export default defineNuxtConfig({
 	pages: true,
 	modules: [
 		"@pinia/nuxt",
+		"@formkit/nuxt",
 		"nuxt-quasar-ui",
 		"@nuxt/devtools",
 		"@nuxt/image",
 		"@nuxtjs/google-fonts",
+		"nuxt-icon",
 	],
 	vite: {
 		css: {
@@ -22,9 +24,23 @@ export default defineNuxtConfig({
 		plugins: ["Loading", "Notify"],
 		extras: { font: null, animations: "all" },
 	},
+	appConfig: {
+		nuxtIcon: {
+			size: "24px", // default <Icon> size applied
+			class: "icon", // default <Icon> class applied
+			aliases: {
+				nuxt: "logos:nuxt-icon",
+				up: "uil:angle-up",
+				down: "uil:angle-down",
+			},
+		},
+	},
+
 	googleFonts: {
 		families: {
-			Jost: true,
+			Jost: {
+				wght: [400, 500, 600, 700],
+			},
 		},
 	},
 	pinia: {
