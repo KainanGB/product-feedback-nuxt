@@ -1,8 +1,10 @@
 <template>
 	<div class="feedback-card text-black">
-		<h3 class="card-title">Add tags for solutions</h3>
-		<p class="card-text">Easier to search for solutions based on a specific stack.</p>
-		<button class="card-button">Enhancement</button>
+		<NuxtLink to="/details/1">
+			<h3 class="card-title">Add tags for solutions</h3>
+			<p class="card-text">Easier to search for solutions based on a specific stack.</p>
+			<button class="card-button">Enhancement</button>
+		</NuxtLink>
 		<div class="card-actions">
 			<span class="upvote" :class="isUpvoted ? 'upvoted' : ''" @click="toggleUpvote">
 				<Icon class="up-icon" :color="isUpvoted ? 'white' : ''" name="uil:angle-up" />
@@ -23,7 +25,7 @@ const isUpvoted = ref(false);
 const toggleUpvote = () => (isUpvoted.value = !isUpvoted.value);
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .feedback-card {
 	background-color: #fff !important;
 	padding: 20px;

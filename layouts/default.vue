@@ -1,22 +1,22 @@
 <template>
-	<div>
-		<Header @toggleMenu="toggleMenu" :isMenuOpen="isMenuOpen" />
-		<div class="container">
-			<slot />
-		</div>
-	</div>
+	<Header />
+	<main class="container">
+		<ul class="cards">
+			<li>
+				<FeedbackCard />
+			</li>
+		</ul>
+	</main>
 </template>
 
-<script setup lang="ts">
-let isMenuOpen = ref(false);
-function toggleMenu(): void {
-	isMenuOpen.value = !isMenuOpen.value;
-}
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .container {
-	/* background-color: $; */
 	padding: 0 2rem;
+	height: 100dvh;
+	.cards {
+		margin-top: 30px;
+	}
 }
 </style>

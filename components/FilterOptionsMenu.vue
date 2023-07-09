@@ -23,7 +23,7 @@
 				</li>
 			</ul>
 		</transition-group>
-		<NuxtLink to="/new-feedback">
+		<NuxtLink to="/form">
 			<button class="feedback-btn">+ Add feedback</button>
 		</NuxtLink>
 	</div>
