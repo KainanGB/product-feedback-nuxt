@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.6",
 		"@commitlint/config-conventional": "^17.6.6",
+		"@formkit/zod": "^0.17.4",
 		"@nuxt/devtools": "latest",
 		"@nuxt/image": "^1.0.0-rc.1",
 		"@nuxt/types": "^2.17.0",
@@ -30,7 +31,8 @@
 		"nuxt-icon": "^0.4.2",
 		"nuxt-quasar-ui": "^2.0.2",
 		"typescript": "^4.9.5",
-		"vitest": "^0.32.2"
+		"vitest": "^0.32.2",
+		"zod": "^3.21.4"
 	},
 	"overrides": {
 		"vue": "latest"
