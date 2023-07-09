@@ -1,7 +1,3 @@
 <template>
-	<NuxtLayout>
-		<FeedbackCard />
-	</NuxtLayout>
+	<NuxtLayout />
 </template>
-
-<script setup></script>
