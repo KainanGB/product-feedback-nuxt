@@ -1,0 +1,136 @@
+$purple: #ad1fea;
+$purple-hover: #c75af6;
+$blue: #4661e6;
+$blue-hover: #7c91f9;
+$blue-light: #62bcfa;
+$orange: #f49f85;
+$red: #d73737;
+$red-hover: #e98888;
+$grey-darkest: #373f68;
+$grey-darker: #3a4374;
+$grey-darker-15: hsl(231, 33%, 34%, 0.15);
+$grey-darker-hover: #656ea3;
+$grey-dark: #647196;
+$grey-hover: #cfd7ff;
+$input-placeholder: #8c92b3;
+$grey: #f2f4ff;
+$grey-75: hsl(231, 100%, 97%, 0.75);
+$h1: 1.5rem;
+$h1-lh: 35px;
+$h1-ls: -0.33px;
+$h2: 1.25rem;
+$h2-lh: 29px;
+$h2-ls: -0.25px;
+$h3: 1.125rem;
+$h3-lh: 26px;
+$h3-ls: -0.25px;
+$h4: 0.875rem;
+$h4-lh: 20px;
+$h4-ls: -0.2px;
+$body: 1rem;
+$body-lh: 23px;
+$body-s: 0.938rem;
+$body-s-lh: 22px;
+$body-xs: 0.813rem;
+$body-xs-lh: 19px;
+$max-width: 1100px;
+$max-width-s: 730px;
+$grey-light: #f7f8fd;
+$background-color_1: $grey-light;
+$ff: "Jost" !important;
+
+:root {
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: "Jost", sans-serif !important;
+}
+
+$radial-gradient: radial-gradient(
+	128.88% 128.88% at 103.9% -10.39%,
+	#e84d70 0%,
+	#a337f6 53.09%,
+	#28a7ed 100%
+);
+
+body,
+html {
+	background-color: $grey-light;
+	position: relative;
+	overflow-x: hidden;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: $h1;
+	line-height: $h1-lh;
+	letter-spacing: $h1-ls;
+}
+
+h2 {
+	font-size: $h2;
+	line-height: $h2-lh;
+	letter-spacing: $h2-ls;
+}
+
+h3 {
+	font-size: $h3;
+	line-height: $h3-lh;
+	letter-spacing: $h3-ls;
+}
+
+h4 {
+	font-size: $h4;
+	line-height: $h4-lh;
+	letter-spacing: $h4-ls;
+}
+
+.body {
+	font-size: $body;
+	line-height: $body-lh;
+}
+
+.body-s {
+	font-size: $body-s;
+	line-height: $body-s-lh;
+}
+
+button {
+	outline: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+@media (max-width: 760px) {
+	body {
+		font-size: $body-xs;
+		line-height: $body-xs-lh;
+	}
+
+	h1 {
+		font-size: 1.125rem;
+		line-height: 26px;
+		letter-spacing: 0.25px;
+	}
+	h2 {
+		font-size: 0.938rem;
+		line-height: 22px;
+		letter-spacing: -0.19px;
+	}
+	h3 {
+		font-size: 0.813rem;
+		line-height: 19px;
+		letter-spacing: -0.18px;
+	}
+	h4 {
+		font-size: 0.813rem;
+	}
+}
